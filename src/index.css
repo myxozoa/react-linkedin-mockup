@@ -1,3 +1,6 @@
+body {
+  background: #F5F5F5;
+}
 body,
 #root {
   margin: 0;
@@ -203,6 +206,75 @@ body,
 }
 .top-container .top-bar .work .upgrade:hover {
   text-decoration: underline;
+}
+.ad {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.83rem;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.ad .actual-ad {
+  text-decoration: underline;
+}
+.ad .ad-tagline {
+  color: #0b8bb3;
+}
+.ad .ad-end {
+  color: #6E6E6E;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-left: 10px;
+  font-weight: normal;
+}
+.ad .ad-end .ellipsis {
+  margin-top: 2px;
+}
+.connections {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 384px;
+  width: 220px;
+  height: 450px;
+  background: white;
+  font-size: 1rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  box-shadow: 0 2px 1px 1px rgba(82, 82, 82, 0.1);
+}
+.connections .con-num {
+  margin-top: 38px;
+  font-size: 1.8rem;
+  letter-spacing: -1.2px;
+  font-weight: 300;
+  color: #0090C7;
+  cursor: pointer;
+}
+.connections .your {
+  margin-top: 10px;
+  font-size: 0.87rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.connections .see-all {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #0090C7;
+  cursor: pointer;
+}
+.connections .see-all:hover {
+  text-decoration: underline;
+}
+.connections img {
+  margin-top: 10px;
+  cursor: pointer;
 }
 .flex-center-mix {
   display: flex;
