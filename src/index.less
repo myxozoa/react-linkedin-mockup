@@ -1,85 +1,180 @@
 body, #root {
     margin: 0;
     padding: 0;
-    font-family: Source Sans Pro;
+    font-family: Roboto;
     font-size: 62.5%;
 }
 #root {
     width: 100%;
 }
-
-.top-bar {
-    width: 100%;
-    height: 30px;
+.flex-center-mix {
     display: flex;
-    padding: 20px 30px 0 30px;
-    font-size: 0.9rem;
-    color: white;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+.top-container {
+    display: flex;
+    justify-content: center;
     background: #2A414B;
+    width: 100%;
 
-    .search {
-        width: 50%;
-        display: flex;
+    .top-bar {
+        width: 60%;
+        height: 44px;
+        padding: 7px 30px 0 30px;
+        font-size: 0.71rem;
+        letter-spacing: 0.5px;
+        color: white;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        .flex-center-mix();
 
-        .logo {
-            img {
-                width: 48px;
-                height: 48px;
-            }
-        }
 
-        .
-    }
-
-    .top-middle {
-        g {
-            fill: #C5D0D7;
-
-        }
-        .navigation {
-            display: flex;
+        .search {
+            width: 50%;
+            height: 44px;
             flex-direction: row;
-            padding-left: 30%;
-            .nav-buttons {
+            .flex-center-mix();
+            justify-content: flex-start;
+
+            .logo {
+                stroke: none;
+                stroke-width: 1;
+                fill: none;
+                fill-rule: evenodd;
+                padding: 10px 0 0 0;
+                margin-bottom: 4px;
+            }
+            .search-box {
+                .flex-center-mix();
+                height: 34px;
+                color: #6A7C84;
+                background: #E0E9ED;
+                margin-bottom: 6px;
+                border-radius: 3px;
+
+                svg {
+                    fill: #2A414B;
+                    padding: 5px 5px 5px 10px;
+                }
+                input {
+                    width: 250px;
+                    height: 27px;
+                    text-align: start;
+                    background: none;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+            }
+
+        }
+
+        .top-middle {
+            width: 60%;
+            g {
+                fill: #C5D0D7;
+
+            }
+            .navigation {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
+                padding-left: 20%;
+
+                .nav-buttons {
+                    display: flex;
+                    flex-direction: row;
+                }
+                .Home,.Notifications,.Jobs,.Messaging,.My-Network  {
+                    .flex-center-mix();
+                    flex-direction: column;
+                    width: 80px;
+                    height: 43px;
+                    cursor: pointer;
+                    color: #C5D0D7;
+
+                    .icon {
+                        margin-bottom: -2px;
+                    }
+
+                    &:hover {
+                        color: white;
+                        g {
+                            fill: white;
+                        }
+                    }
+                }
+
+                .user-dropdown {
+                    width: 80px;
+                    height: 43px;
+                    .flex-center-mix();
+                    flex-direction: column;
+                    cursor: pointer;
+                    color: #C5D0D7;
+
+                    &:hover {
+                        color: white;
+                    }
+
+                    .profile-pic {
+                        background: #a1a1a1;
+                        width: 24px;
+                        height: 24px;
+                        margin: 2px;
+                        border-radius: 50%;
+                    }
+                    .user-title {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin-left: 3px;
+
+                        .arrow {
+                            padding: 3px 0 0 2px;
+                            font-family: "Arial Unicode MS";
+                            font-size: 9px;
+                        }
+                    }
+                }
+
+                .My-Network {
+                    color: white;
+                    border-bottom: 3px solid white;
+
+                    g {
+                        fill: white;
+                    }
+                }
+
             }
-            .Home,.Notifications,.Jobs,.Messaging,.My-Network  {
-                display: flex;
+        }
+        .work {
+            width: 20%;
+            .flex-center-mix();
+
+            .work-dropdown {
+                width: 80px;
+                height: 43px;
+                .flex-center-mix();
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin: 5px;
-                padding-top: 10px;
-                width: 75px;
-                height: 50px;
-                margin: 10px;
                 cursor: pointer;
                 color: #C5D0D7;
 
+                svg {
+                    fill: #C5D0D7;
+                }
+
                 &:hover {
-                    g{
+                    color: white;
+                    svg {
                         fill: white;
                     }
                 }
             }
-
-            .My-Network {
-                color: white;
-                border-bottom: 3px solid white;
-
-                g {
-                    fill: white;
-                }
-            }
-
         }
-
     }
 }

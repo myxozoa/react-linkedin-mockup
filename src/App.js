@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <TopBar />
+        <TopBar username='Ronnie'/>
         <img src={tinyLogo} alt='brorked'/>
 
       </div>

@@ -38,7 +38,7 @@ class NavButtons extends React.Component {
                 return (
                     <div key={button.id} className={button.text}>
                         <div className='icon'>
-                            <svg viewBox="0 0 24 24" width="23" height="23" preserveAspectRatio="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 24 24" width="24" height="24" preserveAspectRatio="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
                                 <g>{button.svg}</g>
                             </svg>
                         </div>
