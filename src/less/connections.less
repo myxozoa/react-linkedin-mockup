@@ -5,10 +5,10 @@
   flex-direction: column;
   margin-left: 384px;
   width: 220px;
-  height: 450px;
+  height: 460px;
   background: white;
   font-size: 1rem;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 2px;
   box-shadow: 0 2px 1px 1px rgba(82, 82, 82, 0.1);
 
@@ -17,7 +17,7 @@
     font-size: 1.8rem;
     letter-spacing: -1.2px;
     font-weight: 300;
-    color: #0090C7;
+    color: #0090c7;
     cursor: pointer;
   }
   .your {
@@ -30,7 +30,7 @@
     margin-top: 8px;
     font-size: 0.85rem;
     font-weight: bold;
-    color: #0090C7;
+    color: #0090c7;
     cursor: pointer;
 
     &:hover {
@@ -40,5 +40,64 @@
   img {
     margin-top: 10px;
     cursor: pointer;
+  }
+
+  .conn-break {
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    border-top: 1px solid #E2E2E2;
+  }
+
+  .contacts {
+    font-size: 0.87rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 17px;
+  }
+  form {
+    .flex-center-mix();
+    flex-direction: column;
+    width: 100%;
+
+    input {
+      width: 88%;
+      height: 30px;
+      border-radius: 2px;
+      border: 1px solid #BEBEBE;
+    }
+    button {
+      margin-top: 10px;
+      width: 88%;
+      height: 30px;
+      .button-mix();
+    }
+  }
+
+  .conn-options {
+    .flex-center-mix();
+    width: 100%;
+    margin-top: 15px;
+    font-size: 0.83rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 10px;
+  }
+  .conn-info {
+    .flex-center-mix();
+    background: #F5F5F5;
+    height: 70px;
+    font-size: 0.7rem;
+    letter-spacing: 0.6px;
+
+    div {
+      .conn-info-text {
+        color:#626262;
+      }
+      .conn-info-link {
+        cursor: pointer;
+      }
+      width: 85%;
+    }
   }
 }
