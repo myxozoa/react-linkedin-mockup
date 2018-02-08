@@ -8,11 +8,6 @@ body,
 #root {
   width: 100%;
 }
-.flex-center-mix {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .top-container {
   display: flex;
   justify-content: center;
@@ -47,6 +42,7 @@ body,
   fill-rule: evenodd;
   padding: 10px 0 0 0;
   margin-bottom: 4px;
+  cursor: pointer;
 }
 .top-container .top-bar .search .search-box {
   display: flex;
@@ -56,11 +52,12 @@ body,
   color: #6A7C84;
   background: #E0E9ED;
   margin-bottom: 6px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 .top-container .top-bar .search .search-box svg {
   fill: #2A414B;
   padding: 5px 5px 5px 10px;
+  cursor: pointer;
 }
 .top-container .top-bar .search .search-box input {
   width: 250px;
@@ -82,7 +79,7 @@ body,
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding-left: 20%;
+  padding-left: 5%;
 }
 .top-container .top-bar .top-middle .navigation .nav-buttons {
   display: flex;
@@ -132,6 +129,7 @@ body,
   flex-direction: column;
   cursor: pointer;
   color: #C5D0D7;
+  border-right: 1px solid #5B707A;
 }
 .top-container .top-bar .top-middle .navigation .user-dropdown:hover {
   color: white;
@@ -170,12 +168,22 @@ body,
 .top-container .top-bar .work .work-dropdown {
   width: 80px;
   height: 43px;
+  margin-left: -12px;
+  margin-bottom: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
   color: #C5D0D7;
+}
+.top-container .top-bar .work .work-dropdown .work-title {
+  margin-left: 4px;
+}
+.top-container .top-bar .work .work-dropdown .work-title .arrow {
+  padding: 3px 0 0 2px;
+  font-family: "Arial Unicode MS";
+  font-size: 9px;
 }
 .top-container .top-bar .work .work-dropdown svg {
   fill: #C5D0D7;
@@ -185,4 +193,19 @@ body,
 }
 .top-container .top-bar .work .work-dropdown:hover svg {
   fill: white;
+}
+.top-container .top-bar .work .upgrade {
+  margin-left: 10px;
+  margin-bottom: 2px;
+  color: #d8caa5;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.top-container .top-bar .work .upgrade:hover {
+  text-decoration: underline;
+}
+.flex-center-mix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 
 import TopBar from './components/TopBar';
-import tinyLogo from './assets/tiny_logo21.svg';
+import Ad from './components/Ad';
+import Invitations from './components/Invitations'
 
 
 class App extends React.Component {
@@ -9,7 +10,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <TopBar username='Ronnie'/>
-        <img src={tinyLogo} alt='brorked'/>
+        <Ad />
+        <Invitations />
+        <Connections />
+        <Promoted />
+        <PYMK />
+        <Messaging />
 
       </div>
     );
