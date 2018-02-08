@@ -1,5 +1,76 @@
-body {
+body,
+#root {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Source Sans Pro;
+  font-size: 62.5%;
+}
+#root {
+  width: 100%;
+}
+.top-bar {
+  width: 100%;
+  height: 38px;
+  display: flex;
+  padding: 20px 30px 0 30px;
+  font-size: 0.9rem;
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #2A414B;
+}
+.top-bar .search {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.top-bar .search .logo img {
+  width: 48px;
+  height: 48px;
+}
+.top-bar .top-middle g {
+  fill: #C5D0D7;
+}
+.top-bar .top-middle .navigation {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30%;
+}
+.top-bar .top-middle .navigation .nav-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.top-bar .top-middle .navigation .Home,
+.top-bar .top-middle .navigation .Notifications,
+.top-bar .top-middle .navigation .Jobs,
+.top-bar .top-middle .navigation .Messaging,
+.top-bar .top-middle .navigation .My-Network {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding-top: 10px;
+  width: 75px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+  color: #C5D0D7;
+}
+.top-bar .top-middle .navigation .Home:hover g,
+.top-bar .top-middle .navigation .Notifications:hover g,
+.top-bar .top-middle .navigation .Jobs:hover g,
+.top-bar .top-middle .navigation .Messaging:hover g,
+.top-bar .top-middle .navigation .My-Network:hover g {
+  fill: white;
+}
+.top-bar .top-middle .navigation .My-Network {
+  color: white;
+  border-bottom: 3px solid white;
+}
+.top-bar .top-middle .navigation .My-Network g {
+  fill: white;
 }
