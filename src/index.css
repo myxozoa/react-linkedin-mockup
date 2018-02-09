@@ -522,18 +522,36 @@ body,
   font-weight: bold;
   border: 1px solid rgba(226, 226, 226, 0.4);
 }
+.person .delete-person {
+  visibility: hidden;
+}
+.person .person-name {
+  cursor: pointer;
+}
+.person .person-name:hover {
+  text-decoration: underline;
+}
 .person .job {
   font-size: 0.65rem;
   font-weight: 300;
   margin-bottom: 10px;
 }
 .person img {
-  margin-top: -20px;
+  margin-top: -40px;
   margin-bottom: 10px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .person:hover {
   background: #F2F6F8;
+}
+.person:hover .delete-person {
+  position: relative;
+  left: 80px;
+  top: -19px;
+  visibility: visible;
+  cursor: pointer;
+  fill: #6D6F70;
 }
 .person button {
   width: 90px;
@@ -551,6 +569,35 @@ body,
   border: 2px solid #0077AD;
   padding: 0;
   color: #0077AD;
+}
+.bubbles {
+  height: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.bubbles .bubble1 img,
+.bubbles .bubble2 img,
+.bubbles .bubble3 img,
+.bubbles .bubble4 img {
+  width: 40px;
+  height: auto;
+  border: 1px solid #e4e4e4;
+  background: white;
+  border-radius: 50%;
+}
+.bubbles .bubble2 {
+  position: relative;
+  right: 15px;
+}
+.bubbles .bubble3 {
+  position: relative;
+  right: 35px;
+}
+.bubbles .bubble4 {
+  position: relative;
+  right: 55px;
 }
 .flex-center-mix {
   display: flex;

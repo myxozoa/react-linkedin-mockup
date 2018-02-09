@@ -124,6 +124,13 @@ class PYMK extends React.Component {
         ],
     };
 
+    removePerson = (id) => {
+        const newData = this.state.data.filter(person => {
+            return person.id !== id;
+        });
+        this.setState({ data: newData });
+    }
+
     render() {
         return (
             <div className="pymk">
@@ -134,12 +141,14 @@ class PYMK extends React.Component {
 
                     <Person
                         key={person.id}
+                        id={person.id}
                         pic={person.profile_pic}
                         name={person.name}
                         job={person.job_title}
                         company={person.company}
                         connection={person.connection}
                         incdec={this.props.incdec}
+                        remove={this.removePerson}
                     />
                     );
                 })}

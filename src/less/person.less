@@ -10,6 +10,17 @@
   font-weight: bold;
   border: 1px solid rgba(226, 226, 226, 0.4);
 
+  .delete-person {
+    visibility: hidden;
+  }
+
+  .person-name {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .job {
     font-size: 0.65rem;
     font-weight: 300;
@@ -17,13 +28,23 @@
   }
 
   img {
-    margin-top: -20px;
+    margin-top: -40px;
     margin-bottom: 10px;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   &:hover {
     background: #F2F6F8;
+
+    .delete-person {
+      position: relative;
+      left: 80px;
+      top: -19px;
+      visibility: visible;
+      cursor: pointer;
+      fill: #6D6F70;
+    }
   }
 
   button {

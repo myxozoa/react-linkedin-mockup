@@ -1,5 +1,5 @@
 import React from 'react';
-import bubbles from '../assets/connectionsbubbles.png';
+import Bubbles from './Bubbles';
 
 class Connections extends React.Component {
     state = {
@@ -12,7 +12,7 @@ class Connections extends React.Component {
                 <div className='con-num'> {this.props.num} </div>
                 <div className='your'> Your connections </div>
                 <div className='see-all'> See all </div>
-                <img src={bubbles} alt='borked' />
+                <Bubbles />
                 <div className='conn-break'></div>
                 <div className='contacts'>Add personal contacts</div>
                 <form>
