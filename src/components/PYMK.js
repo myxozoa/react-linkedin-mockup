@@ -36,7 +36,7 @@ class PYMK extends React.Component {
                     'https://robohash.org/possimusmollitiaquibusdam.png?size=100x100&set=set1',
                 company: 'Thoughtstorm',
                 id: '5a7b6e8efc13ae3d79000010',
-                job_title: 'Community Outreach Specialist',
+                job_title: 'Outreach Specialist',
                 name: 'Albrecht Pleasance',
                 connection: 'Jamie Woolaghan',
             },

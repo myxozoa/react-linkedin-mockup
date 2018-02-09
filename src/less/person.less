@@ -1,7 +1,34 @@
 .person {
-  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 132px;
+  height: 170px;
+  padding: 25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 1px solid rgba(226, 226, 226, 0.4);
+
+  .job {
+    font-size: 0.65rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
 
   img {
+    margin-top: -20px;
+    margin-bottom: 10px;
     border-radius: 50%;
+  }
+
+  &:hover {
+    background: #F2F6F8;
+  }
+
+  button {
+    width: 90px;
+    height: 25px;
+    .button-mix();
   }
 }

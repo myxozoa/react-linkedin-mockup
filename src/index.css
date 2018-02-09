@@ -260,7 +260,7 @@ body,
   font-size: 1rem;
   border: 1px solid #cccccc;
   border-radius: 2px;
-  box-shadow: 0 2px 2px 0.1px rgba(160, 160, 160, 0.1);
+  box-shadow: 0 2px 2px 0.1px rgba(82, 82, 82, 0.3);
 }
 .connections .con-num {
   margin-top: 38px;
@@ -325,11 +325,13 @@ body,
   background: white;
   border-radius: 2px;
   border: 1px solid #0088BB;
+  padding: 1px;
   cursor: pointer;
 }
 .connections form button:hover {
   background: #BFDDEA;
   border: 2px solid #0077AD;
+  padding: 0;
   color: #0077AD;
 }
 .connections .conn-options {
@@ -391,7 +393,6 @@ body,
 }
 .pymk {
   width: 88%;
-  height: 1000px;
   background: white;
   margin-top: 15px;
   display: flex;
@@ -445,20 +446,27 @@ body,
   cursor: pointer;
 }
 .footer {
+  width: 330px;
   position: fixed;
   right: 18%;
   top: 400px;
-  height: 50px;
+  height: 80px;
   display: flex;
   flex-direction: column;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #888A97;
+}
+.footer .break {
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid #B1B5B7;
+  margin-bottom: 20px;
 }
 .footer .footer-row1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 13px;
 }
 .footer .footer-row1 div {
   margin: 20px;
@@ -471,7 +479,7 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 13px;
 }
 .footer .footer-row2 div {
   margin: 20px;
@@ -484,7 +492,7 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 13px;
 }
 .footer .footer-row3 div {
   margin: 20px;
@@ -497,16 +505,52 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 13px;
 }
 .footer .footer-row4 div {
   margin: 10px;
 }
 .person {
-  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 132px;
+  height: 170px;
+  padding: 25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 1px solid rgba(226, 226, 226, 0.4);
+}
+.person .job {
+  font-size: 0.65rem;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 .person img {
+  margin-top: -20px;
+  margin-bottom: 10px;
   border-radius: 50%;
+}
+.person:hover {
+  background: #F2F6F8;
+}
+.person button {
+  width: 90px;
+  height: 25px;
+  color: #0088BB;
+  font-weight: bold;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #0088BB;
+  padding: 1px;
+  cursor: pointer;
+}
+.person button:hover {
+  background: #BFDDEA;
+  border: 2px solid #0077AD;
+  padding: 0;
+  color: #0077AD;
 }
 .flex-center-mix {
   display: flex;
@@ -519,10 +563,12 @@ body,
   background: white;
   border-radius: 2px;
   border: 1px solid #0088BB;
+  padding: 1px;
   cursor: pointer;
 }
 .button-mix:hover {
   background: #BFDDEA;
   border: 2px solid #0077AD;
+  padding: 0;
   color: #0077AD;
 }
