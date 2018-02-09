@@ -370,8 +370,8 @@ body,
   padding: 0 20px 0 20px;
   width: 82%;
   height: 50px;
-  margin-top: 15px;
   background: white;
+  margin-top: 15px;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -598,6 +598,60 @@ body,
 .bubbles .bubble4 {
   position: relative;
   right: 55px;
+}
+.messaging {
+  position: fixed;
+  bottom: 0;
+  right: 6%;
+  width: 220px;
+  height: 40px;
+  background: white;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0.1px rgba(82, 82, 82, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 10px 0 20px;
+}
+.messaging .online {
+  width: 8px;
+  height: 8px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.messaging .msg-name {
+  margin-right: 50px;
+}
+.messaging .write {
+  width: 16px;
+  height: 16px;
+  padding: 5px;
+  fill: #959595;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.messaging .write:hover {
+  fill: #222222;
+  background: #2e2e2eb3;
+}
+.messaging .gear {
+  width: 16px;
+  height: 16px;
+  padding: 5px;
+  fill: #959595;
+  border-radius: 50%;
+}
+.messaging .gear:hover {
+  fill: #222222;
+  background: #2e2e2eb3;
 }
 .flex-center-mix {
   display: flex;

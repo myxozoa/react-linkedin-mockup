@@ -38,7 +38,7 @@ class App extends React.Component {
                     <Connections num={this.state.connNum} />
                     <Promoted />
                     <Footer />
-                    <Messaging connNum={this.state.connNum} />
+                    <Messaging />
                 </div>
             </div>
         );
