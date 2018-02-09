@@ -284,7 +284,7 @@ body,
   text-decoration: underline;
 }
 .connections img {
-  margin-top: 10px;
+  margin-top: 15px;
   cursor: pointer;
 }
 .connections .conn-break {
@@ -385,6 +385,32 @@ body,
 }
 .invitations .manage:hover {
   text-decoration: underline;
+}
+.promoted {
+  position: fixed;
+  right: 18%;
+  top: 100px;
+  width: 330px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0.1px rgba(82, 82, 82, 0.3);
+}
+.promoted .promo-title {
+  width: 89%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.promoted img {
+  cursor: pointer;
 }
 .flex-center-mix {
   display: flex;
