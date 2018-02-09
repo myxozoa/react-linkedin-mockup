@@ -16,7 +16,7 @@ class Connections extends React.Component {
                 <div className='conn-break'></div>
                 <div className='contacts'>Add personal contacts</div>
                 <form>
-                    <input autoComplete='on' type='email' placeholder='   Email' />
+                    <input autoComplete='on' type='email' placeholder='Email' />
                     <button> Continue </button>
                 </form>
                 <div className='conn-options'> <div>More options</div> </div>

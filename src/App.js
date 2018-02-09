@@ -7,6 +7,7 @@ import Connections from './components/Connections';
 import Promoted from './components/Promoted';
 import PYMK from './components/PYMK';
 import Messaging from './components/Messaging';
+import Footer from './components/Footer';
 
 
 class App extends React.Component {
@@ -25,16 +26,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <TopBar username='Ronnie'/>
         <Ad />
-        <Invitations />
         <div className='app-page'>
+          <Invitations />
+          <PYMK />
           <Connections num={this.state.connNum} inc={this.increaseConnections} dec={this.decreaseConnections}/>
           <Promoted />
-          <PYMK />
+          <Footer />
+          <Messaging connNum={this.state.connNum}/>
         </div>
-        <Messaging connNum={this.state.connNum}/>
 
       </div>
     );

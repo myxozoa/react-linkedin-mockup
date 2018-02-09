@@ -11,6 +11,15 @@ body,
 #root {
   width: 100%;
 }
+.app-page {
+  z-index: -100;
+  margin-left: 31%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  flex-direction: column;
+}
 .top-container {
   display: flex;
   justify-content: center;
@@ -235,18 +244,20 @@ body,
   margin-top: 2px;
 }
 .connections {
+  z-index: 100;
   position: fixed;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 384px;
+  left: 20%;
+  top: 100px;
   width: 220px;
   height: 460px;
   background: white;
   font-size: 1rem;
   border: 1px solid #cccccc;
   border-radius: 2px;
-  box-shadow: 0 2px 1px 1px rgba(82, 82, 82, 0.1);
+  box-shadow: 0 2px 2px 0.1px rgba(82, 82, 82, 0.3);
 }
 .connections .con-num {
   margin-top: 38px;
@@ -296,9 +307,10 @@ body,
   width: 100%;
 }
 .connections form input {
-  width: 88%;
+  width: 84%;
   height: 30px;
   border-radius: 2px;
+  padding-left: 10px;
   border: 1px solid #BEBEBE;
 }
 .connections form button {
@@ -324,9 +336,11 @@ body,
   width: 100%;
   margin-top: 15px;
   font-size: 0.83rem;
+  font-weight: 300;
   letter-spacing: 1px;
   border-bottom: 1px solid #E2E2E2;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .connections .conn-info {
   display: flex;
@@ -335,6 +349,7 @@ body,
   background: #F5F5F5;
   height: 70px;
   font-size: 0.7rem;
+  font-weight: 300;
   letter-spacing: 0.6px;
 }
 .connections .conn-info div {
@@ -345,6 +360,31 @@ body,
 }
 .connections .conn-info div .conn-info-link {
   cursor: pointer;
+}
+.invitations {
+  padding: 0 20px 0 20px;
+  width: 82%;
+  height: 50px;
+  margin-top: 15px;
+  background: white;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0.1px rgba(82, 82, 82, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.invitations .manage {
+  color: #727272;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.invitations .manage:hover {
+  text-decoration: underline;
 }
 .flex-center-mix {
   display: flex;
